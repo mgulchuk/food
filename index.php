@@ -16,6 +16,13 @@ $f3->route('GET /', function()
     $view = new Template();
     echo $view -> render("views/home.html");
 });
+// Define a default route
+$f3->route('GET /breakfast', function()
+{
+    //echo '<h1>Welcome breakfast</h1>';
+    $view = new Template();
+    echo $view -> render("views/bfast.html");
+});
 
 // Run fat free
 $f3->run();
